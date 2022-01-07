@@ -1,3 +1,3 @@
-módulos_nodo
+*node_modules/*
 .cache
 dist
