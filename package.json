@@ -1,0 +1,20 @@
+{
+  "name": "profesionalJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas4746/curso-profesional-JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas4746/curso-profesional-JS/issues"
+  },
+  "homepage": "https://github.com/nicolas4746/curso-profesional-JS#readme"
+}
