@@ -6,6 +6,7 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="./assets/index.css" />
+    <link rel="shortcut icon" href="#"> // Esto es para sacar el error 404 de plavicon.ico ??
   </head>
 
   <body>
@@ -26,7 +27,27 @@
        const video = document.querySelector("video");
        const button = document.querySelector("button");
 
-       button.onclick = () => video.play();
+       function MediaPlayer(config) {
+         this.media = config.el;
+       }
+
+       MediaPlayer.prototype.play = function() {
+        this.media.play();
+       }
+       MediaPlayer.prototype.pause = function() {
+         this.media.pause();
+       }
+       MediaPlayer.prototype.togglePlay = function(){
+         if(this.media.paused) {
+           this.play();
+         } else {
+           this.pause();
+         }
+       };
+
+       const player = new MediaPlayer({ el: video });
+
+       button.onclick = () => player.togglePlay();
     </script>
   </body>
 </html>
